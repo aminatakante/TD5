@@ -1,0 +1,56 @@
+3 niveaux de distribution
+
+testnet rigbi, infura pour deployer le token
+
+holiday vanish snow devote solid space pair one bread picnic they brown
+
+  function add_list(address m_address)
+  {
+	if (authorization[address]==true)
+	{
+		address.push(
+	}
+  }
+
+
+  function airDrop(address[] addressVector, unit donation)
+  {
+	require(authorization[address]==true);
+	for(unit i=0; i<addressVector.lenght;i++)
+	{
+	 _balances[msg.sender]
+	//_balances[msg.sender]-=donation;
+	//_balances[singleAddress]+=donation;
+	}
+	//exemple for singleAddress in addressVector;
+	
+  }
+
+ function airDrop(address[] addressVector, unit donation)
+  {
+	require(authorization[address]==true);
+	for(unit i=0; i<addressVector.lenght;i++)
+	{
+	 _balances[msg.sender]
+	//_balances[msg.sender]-=donation;
+	//_balances[addressVector[i]]+=donation;
+	}
+	//exemple for singleAddress in addressVector;
+	
+  }
+
+deploy:
+var Migrations = artifacts.require("./token.sol");
+
+module.exports = (deployer, network, accounts) => {
+    deployer.then(async () => {
+        await ERC20Deploy(deployer, network, accounts);
+    });
+};
+
+async function ERC20Deploy(deployer, network, accounts) {
+	await deployer.deploy(Migrations);
+	console.log("Deploying contract")
+}
+
+contract address:0x55c6e9e1fe64f24c3c67af6e59ed82803150620e
